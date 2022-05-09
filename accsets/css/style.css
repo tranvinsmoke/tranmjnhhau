@@ -1,0 +1,261 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #23E3C9;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sliders{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.sliders input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+    
+}
+
+.slide img{
+    width: 800px;
+    height: auto;
+    
+}
+/* css for manual slide navigation  */
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.manual-btn:hover{
+    background: #40D3DC;
+}
+
+#radio1:checked ~ .firts{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .firts{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .firts{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .firts{
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .firts{
+    margin-left: -80%;
+}
+
+#radio6:checked ~ .firts{
+    margin-left: -100%;
+}
+#radio7:checked ~ .firts{
+    margin-left: -120%;
+}
+#radio8:checked ~ .firts{
+    margin-left: -140%;
+}
+#radio9:checked ~ .firts{
+    margin-left: -160%;
+}
+#radio10:checked ~ .firts{
+    margin-left: -180%;
+}
+#radio11:checked ~ .firts{
+    margin-left: -200%;
+}
+#radio12:checked ~ .firts{
+    margin-left: -220%;
+}
+#radio13:checked ~ .firts{
+    margin-left: -240%;
+}
+#radio14:checked ~ .firts{
+    margin-left: -260%;
+}
+#radio15:checked ~ .firts{
+    margin-left: -280%;
+}
+#radio16:checked ~ .firts{
+    margin-left: -300%;
+}
+#radio17:checked ~ .firts{
+    margin-left: -320%;
+}
+#radio18:checked ~ .firts{
+    margin-left: -340%; 
+}
+#radio19:checked ~ .firts{
+    margin-left: -360%;
+}
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 430px;
+
+}
+
+.navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s; 
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #40D3DC;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background: #40D3DC;
+}
+
+#radio7:checked ~ .navigation-auto .auto-btn7{
+    background: #40D3DC;
+}
+
+#radio8:checked ~ .navigation-auto .auto-btn8{
+    background: #40D3DC;
+}
+
+#radio9:checked ~ .navigation-auto .auto-btn9{
+    background: #40D3DC;
+}
+#radio10:checked ~ .navigation-auto .auto-btn10{
+    background: #40D3DC;
+}
+#radio11:checked ~ .navigation-auto .auto-btn11{
+    background: #40D3DC;
+}
+#radio12:checked ~ .navigation-auto .auto-btn12{
+    background: #40D3DC;
+}
+#radio13:checked ~ .navigation-auto .auto-btn13{
+    background: #40D3DC;
+}
+#radio14:checked ~ .navigation-auto .auto-btn14{
+    background: #40D3DC;
+}
+
+#radio15:checked ~ .navigation-auto .auto-btn15{
+    background: #40D3DC;
+}
+
+#radio16:checked ~ .navigation-auto .auto-btn16{
+    background: #40D3DC;
+}
+#radio17:checked ~ .navigation-auto .auto-btn17{
+    background: #40D3DC;
+}
+#radio18:checked ~ .navigation-auto .auto-btn18{
+    background: #40D3DC;
+}
+#radio19:checked ~ .navigation-auto .auto-btn19{
+    background: #40D3DC;
+}
+
+
+
+.change{
+    display: flex;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.change-prev{
+    width: 30px;
+    height: 80px;
+    margin-right: 740px;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    cursor: pointer;
+    
+}
+
+
+.change-next{
+    width: 30px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    
+}
+
+.ti-angle-left,
+.ti-angle-right{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    margin-left: 5px;
+    color: #fff;
+    
+}
+
+.change-next:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.change-prev:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
